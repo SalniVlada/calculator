@@ -1,0 +1,134 @@
+/*
+bg #00746D
+blue #2E7989
+yellow #EBCC71
+бокова панель rgba(28, 129, 158, 0.3)
+*/
+
+@import url(./fonts/fonts.css);
+
+.calc {
+  margin: 100px auto;
+  width: 540px;
+  height: 540px;
+  border: 3px solid rgba(0, 0, 0, 1);
+  border-radius: 30px;
+  background: rgba(23, 42, 45, 1);
+  color: #fff;
+  font-family: 'Britannic';
+  font-weight: 800;
+}
+
+.calc__screen {
+  width: 507px;
+  height: 134px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin-top: 38px;
+  margin-right: 40px;
+}
+
+.calc__screen-number {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.container {
+  margin: 0 auto;
+  width: 507px;
+  height: 351px;
+  background-color: rgba(3, 73, 69, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__centr {
+  display: grid;
+  grid-template-areas: 
+  "btn_ac btn_plus-minus btn_percent"
+  "btn_seven btn_eight btn_nine"
+  "btn_four btn_five btn_six"
+  "btn_one btn_two btn_three"
+  "btn_zero btn_zero btn_dot";
+  min-width: 314px;
+  justify-items: center;
+  margin-top: 14px;
+  margin-left: 42px;
+  margin-bottom: 10px;
+}
+
+.container__right {
+  min-width: 132px;
+  height: 351px;
+  background: rgba(28, 129, 158, 0.3);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 81px;
+  height: 51px;
+  background: rgba(12, 90, 103, 1);
+  border-radius: 30px;
+  text-align: center;
+  line-height: 53px;
+  font-size: 36px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 9px;
+  text-shadow: 
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+}
+
+.btn_zero {
+  grid-area: btn_zero;
+  width: 90%;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  filter: brightness(110%);
+}
+
+.btn:active {
+  filter: brightness(90%);
+}
+
+.btn_grey {
+  background-color: rgba(63, 72, 73, 1);
+  margin-bottom: 23px;
+}
+
+.btn_black {
+  background-color: rgba(23, 42, 45, 1);
+}

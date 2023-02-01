@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  bold;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/InterExtraBold.woff") format("woff"),
+       url('../fonts/InterExtraBold.ttf') format("truetype");
+}
